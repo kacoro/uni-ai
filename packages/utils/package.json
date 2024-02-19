@@ -1,0 +1,13 @@
+{
+  "name": "@uni-ai/utils",
+  "version": "0.1.0",
+  "description": "local utils package",
+  "main": "./src/index",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kacoro",
+  "license": "MIT"
+}

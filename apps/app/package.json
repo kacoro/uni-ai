@@ -1,0 +1,16 @@
+{
+  "name": "@uni-ai/app",
+  "version": "0.1.0",
+  "description": "An AI app",
+  "main": "./src/index",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kacoro",
+  "license": "MIT",
+  "dependencies": {
+    "@uni-ai/utils": "workspace:^"
+  }
+}

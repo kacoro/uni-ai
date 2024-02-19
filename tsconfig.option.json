@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    //与typescript的project references, tsc的--build模式有关
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    //与生成的js，d.ts,soucemap文件有关
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    //与commonjs与esModule之间互操作性有关
+    "resolveJsonModule": true,
+    "strict": true
+  }
+}

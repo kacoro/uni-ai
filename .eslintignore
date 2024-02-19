@@ -1,0 +1,4 @@
+# Ignore lintifacts:
+node_modules/
+
+pnpm-lock.yaml
