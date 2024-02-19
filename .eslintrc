@@ -1,23 +1,23 @@
 {
-    //.eslintrc文件是Eslint在项目内使用的根级别文件，并且ESLint不应再该目录之外搜索配置文件
-    "root": true,
-    //解析为eslint兼容的AST
-    "parser": "@typescript-eslint/parser",
-    //拓展了那些配置集
-    
-    "extends":[
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/eslint-recommended", //防止eslint和typescript规则冲突
-        "prettier"//需要放在最后，覆盖eslint规则
-    ],
-    "plugins": [
-        "@typescript-eslint",
-        "prettier" ///将prettier规则转换为eslint规则
-    ],
-    "rules": {
-        "prettier/prettier":"error",  //从eslint运行prettier
-        "arrow-body-style":"off",    //与prettier一起使用会出现问题
-        "prefer-arrow-callback":"off" //与prettier一起使用会出现问题
-    }
+  //.eslintrc文件是Eslint在项目内使用的根级别文件，并且ESLint不应再该目录之外搜索配置文件
+  "root": true,
+  //解析为eslint兼容的AST
+  "parser": "@typescript-eslint/parser",
+  //拓展了那些配置集
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended", //防止eslint和typescript规则冲突
+    "prettier" //需要放在最后，覆盖eslint规则
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier" ///将prettier规则转换为eslint规则
+  ],
+  "rules": {
+    "prettier/prettier": "error", //从eslint运行prettier
+    "arrow-body-style": "off", //与prettier一起使用会出现问题
+    "prefer-arrow-callback": "off" //与prettier一起使用会出现问题
+  }
 }
