@@ -4,7 +4,7 @@
   "description": "an uniapp ai project",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint": "eslint ./ --ext .ts,.js,.json --max-warnings=0",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --config .prettierrc . --write",
