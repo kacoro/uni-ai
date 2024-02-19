@@ -6,6 +6,7 @@
   "scripts": {
     "prepare": "husky",
     "lint": "eslint ./ --ext .ts,.js,.json --max-warnings=0",
+    "cz": "cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --config .prettierrc . --write",
     "format-watch": "onchange -d 1000 **/* -- prettier --config .prettierrc --write {{changed}}"
@@ -19,6 +20,8 @@
     "@types/node": "^20.11.19",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
