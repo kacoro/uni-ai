@@ -1,12 +1,7 @@
 {
-  //.eslintrc文件是Eslint在项目内使用的根级别文件，并且ESLint不应再该目录之外搜索配置文件
   "root": true,
-  //解析为eslint兼容的AST
   "parser": "vue-eslint-parser",
-  //拓展了那些配置集
-
   "extends": ["plugin:vue/vue3-essential", "../../.eslintrc"],
-
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",

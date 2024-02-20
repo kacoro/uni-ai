@@ -19,5 +19,8 @@
     "editor.formatOnSaveMode": "file",
     "editor.formatOnType": true,
     "editor.formatOnPaste": false
-  }
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  } //vue格式化工具
 }
