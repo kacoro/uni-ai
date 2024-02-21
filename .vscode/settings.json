@@ -21,6 +21,9 @@
     "editor.formatOnPaste": false
   },
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  } //vue格式化工具
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }, //vue格式化工具
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -13,6 +13,7 @@
     "allowSyntheticDefaultImports": true,
     //与commonjs与esModule之间互操作性有关
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "exclude": ["node_modules"]
   }
 }
