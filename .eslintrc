@@ -16,7 +16,7 @@
     "prettier" ///将prettier规则转换为eslint规则
   ],
   "rules": {
-    "prettier/prettier": "error", //从eslint运行prettier
+    "prettier/prettier": ["error", { "endOfLine": "lf" }], //从eslint运行prettier
     "arrow-body-style": "off", //与prettier一起使用会出现问题
     "prefer-arrow-callback": "off" //与prettier一起使用会出现问题
   }
