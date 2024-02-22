@@ -1,6 +1,31 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
+  // "extends": "@vue/tsconfig/tsconfig.json",
+  "extends": "../../tsconfig.option.json",
   "compilerOptions": {
+    // Required in Vue projects
+    "jsx": "preserve",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    // Required in Vite
+    "isolatedModules": true,
+    // For `<script setup>`
+    // See <https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#preserve-value-imports>
+
+    "preserveValueImports": true, // Option 'preserveValueImports' is deprecated and will stop functioning in TypeScript 5.5. Specify compilerOption '"ignoreDeprecations": "5.0"' to silence this error. Use 'verbatimModuleSyntax' instead.
+
+    // Enforce using `import type` instead of `import` for types
+    "importsNotUsedAsValues": "error", //Option 'importsNotUsedAsValues' is deprecated and will stop functioning in TypeScript 5.5. Specify compilerOption '"ignoreDeprecations": "5.0"' to silence this error.Use 'verbatimModuleSyntax' instead.
+    "ignoreDeprecations": "5.0",
+    // "verbatimModuleSyntax": true,
+
+    "target": "ESNext",
+    // Recommended
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    //ui-app
+
     "sourceMap": true,
     "baseUrl": "./",
     "paths": {
@@ -9,12 +34,6 @@
     "lib": ["esnext", "dom"],
     "types": ["@dcloudio/types", "@ttou/uview-typings/v3", "@ttou/uview-typings/refs"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "src/types/*.d.ts",
-    "node_modules/@ttou/uview-typings/*.d.ts"
-  ]
+
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
 }

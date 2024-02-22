@@ -1,5 +1,4 @@
 import { createPinia } from 'pinia';
-//eslint-disable-next-line
 import uviewPlus from 'uview-plus';
 import { createSSRApp } from 'vue';
 import App from './App.vue';
@@ -11,7 +10,6 @@ export function createApp() {
   app.use(uviewPlus);
   // 需要在app.use(uview-plus)之后执行
 
-  //  eslint-disable-next-line
   uni.$u.setConfig({
     // 修改$u.config对象的属性
     config: {
