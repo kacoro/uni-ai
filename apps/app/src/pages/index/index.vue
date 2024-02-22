@@ -1,8 +1,6 @@
 <template>
   <view class="content uni-flex uni-column">
-    <view class="text-area">
-      <view class="text-area">{{ contentList }}</view>
-    </view>
+    <view class="text-area"></view>
     <view>
       <view>
         <view>content-text:</view>
@@ -14,7 +12,6 @@
           <template v-html="content"></template>
         </view>
         <view>rich-text:</view>
-        <rich-text :nodes="contentList"></rich-text>
       </view>
       <view class="uni-flex uni-row">
         <view class="text uni-flex">
@@ -53,7 +50,7 @@
 import useBigModel from '@/hooks/useBigModel';
 import { roleEnum, type questionType } from '@/types/useBigModel.d';
 import { ref, watch, type Ref } from 'vue';
-const { getAnswer, contentList, content } = useBigModel();
+const { getAnswer, content } = useBigModel();
 let message = ref('接口测试中，你可以不太在意我的行为');
 let questions: questionType[] = [];
 // let content = ref('测试');
